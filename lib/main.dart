@@ -1,7 +1,8 @@
-
+ 
  import 'package:flutter/material.dart'; // package in flutter
  import 'package:carousel_pro/carousel_pro.dart';
  import 'package:practise/components/News.dart';
+ import 'package:practise/components/Mess_Menu.dart';
 
    void main(){
      runApp(MaterialApp(
@@ -122,7 +123,13 @@ class _HomepageState extends State<Homepage> {
            // Mess Menu
 
                 InkWell(
-              onTap: (){},
+              
+              onTap: (){
+                Navigator.push(context, 
+                MaterialPageRoute(builder: (context)=>Mess()),
+                ); 
+              },
+
               child: ListTile(
               title: Text('Mess Menu'),
               leading: Icon(Icons.fastfood, color: Colors.yellow,),
@@ -189,7 +196,7 @@ class _HomepageState extends State<Homepage> {
 
             new Padding(
                  padding: const EdgeInsets.all(20.0),
-                child: new Text('Recent News', style: TextStyle(color: Colors.red, fontSize: 30.0, fontWeight: FontWeight.bold) , 
+                child: new Text('Important Links', style: TextStyle(color: Colors.red, fontSize: 30.0, fontWeight: FontWeight.bold) , 
                 ),
             ),
 
