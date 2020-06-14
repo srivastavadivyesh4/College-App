@@ -6,85 +6,265 @@ class Mess extends StatefulWidget {
 }
 
 class _MessState extends State<Mess> {
-
-  final List<String>listitem=['BTECH 1st Year', 
-                              'BTECH 2nd Year',
-                              'BTECH 3rd Year',
-                              'BTECH 4th Year',
-                              'BTECH Girls ',
-                              'MTECH 1st Year',
-                              'MTECH 2nd Year',
-                              'MTECH Girls',
-                              'PHD Boys',
-                              'PHD Girls',
-                  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       
-        appBar: AppBar(
+       appBar: AppBar(
+
+        backgroundColor: Colors.yellow,
+
+          title: new Text('Mess Menu',
           
-          title:new Text('Mess Menu',
-           style:new TextStyle(
+           style: new TextStyle(
 
-              fontWeight: FontWeight.bold,
               fontSize: 20.0,
-              color: Colors.blue,
-           ),
+              fontWeight: FontWeight.bold,
+              color:Colors.red,
 
-             
-          ),
-
-          backgroundColor: Colors.deepPurple,
+                
+           ),    
         ),
-  
-       body: Container(
 
-          child: ListView.builder(
-            itemBuilder: (_,int index)=>listdataitem(this.listitem[index]),
-            itemCount: this.listitem.length,
-            ),
-       ),
-    );
-  }
-}
+        centerTitle: true,
 
-class listdataitem extends StatelessWidget{
+      ),
 
-  String itemName;
-  listdataitem(this.itemName);
+        body: new Container(
 
-  @override
-  Widget build(BuildContext context) {
-   
-      return new Card(
-
-        elevation: 10.0,
-          child:new Container(
-
-           margin: EdgeInsets.all(10.0),
-           padding: EdgeInsets.all(10.0),
-            child:  Row(
+           child: new ListView(
 
                children: <Widget>[
 
-                
-                  new Text(itemName, 
-                  
-                  style: TextStyle(
+                 InkWell(
 
-                  fontWeight: FontWeight.bold,
-                  fontSize: 25.0,
-                  color: Colors.blue,
+                     onTap: (){
+                       new Image.asset('App_image/image1.jpg');
+                     },
 
+                     child:new ListTile(
+                      
+                       title: new Text(
+                         'BTECH 1st Year',
 
-                  ),
-                   ),
+                         style:new TextStyle(
+                          
+                          fontSize: 20.0,
+                          color: Colors.blue,
+                          fontWeight: FontWeight.bold,
+
+                         )
+                       ),
+
+                     ),
+
+                 ),
+
+                 InkWell(
+
+                     onTap: (){},
+
+                     child:new ListTile(
+
+                       title: new Text(
+                         'BTECH 2nd Year',
+
+                         style:new TextStyle(
+
+                          fontSize: 20.0,
+                          color: Colors.blue,
+                          fontWeight: FontWeight.bold,
+
+                         )
+                       ),
+
+                     ),
+
+                 ),
+
+                 InkWell(
+
+                     onTap: (){},
+
+                     child:new ListTile(
+
+                       title: new Text(
+                         'BTECH 3rd Year',
+
+                         style:new TextStyle(
+
+                          fontSize: 20.0,
+                          color: Colors.blue,
+                          fontWeight: FontWeight.bold,
+
+                         )
+                       ),
+
+                     ),
+
+                 ),
+
+                 InkWell(
+
+                     onTap: (){},
+
+                     child:new ListTile(
+
+                       title: new Text(
+                         'BTECH 4th Year',
+
+                         style:new TextStyle(
+
+                          fontSize: 20.0,
+                          color: Colors.blue,
+                          fontWeight: FontWeight.bold,
+
+                         )
+                       ),
+
+                     ),
+
+                 ),
+
+                InkWell(
+
+                     onTap: (){},
+
+                     child:new ListTile(
+
+                       title: new Text(
+                         'MTECH 1st Year',
+
+                         style:new TextStyle(
+
+                          fontSize: 20.0,
+                          color: Colors.blue,
+                          fontWeight: FontWeight.bold,
+
+                         )
+                       ),
+
+                     ),
+
+                 ),
+
+                 InkWell(
+
+                     onTap: (){},
+
+                     child:new ListTile(
+
+                       title: new Text(
+                         'MTECH 2nd Year',
+
+                         style:new TextStyle(
+
+                          fontSize: 20.0,
+                          color: Colors.blue,
+                          fontWeight: FontWeight.bold,
+
+                         )
+                       ),
+
+                     ),
+
+                 ),
+
+                 InkWell(
+
+                     onTap: (){},
+
+                     child:new ListTile(
+
+                       title: new Text(
+                         'PHD',
+
+                         style:new TextStyle(
+
+                          fontSize: 20.0,
+                          color: Colors.blue,
+                          fontWeight: FontWeight.bold,
+
+                         )
+                       ),
+
+                          
+                     ),
+
+                 ),
+
+                 InkWell(
+
+                     onTap: (){},
+
+                     child:new ListTile(
+
+                       title: new Text(
+                         'BTECH Girls',
+
+                         style:new TextStyle(
+
+                          fontSize: 20.0,
+                          color: Colors.blue,
+                          fontWeight: FontWeight.bold,
+
+                         )
+                       ),
+
+                     ),
+
+                 ),
+
+                 InkWell(
+
+                     onTap: (){},
+
+                     child:new ListTile(
+
+                       title: new Text(
+                         'MTECH Girls',
+
+                         style:new TextStyle(
+
+                          fontSize: 20.0,
+                          color: Colors.blue,
+                          fontWeight: FontWeight.bold,
+
+                         )
+                       ),
+
+                     ),
+
+                 ),
+
+                 InkWell(
+
+                     onTap: (){},
+
+                     child:new ListTile(
+
+                       title: new Text(
+                         'PHD Girls',
+
+                         style:new TextStyle(
+
+                          fontSize: 20.0,
+                          color: Colors.blue,
+                          fontWeight: FontWeight.bold,
+                          wordSpacing: 1.0,
+
+                         )
+                       ),
+
+                     ),
+
+                 ),
+
                ],
 
-            ),
-          ),
-      );
-  }
+           ),          
 
+        ),
+    );
+  }
 }
