@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:practise/components/Mess_Menu_list.dart';
 
 class Mess extends StatefulWidget {
   @override
@@ -8,7 +9,9 @@ class Mess extends StatefulWidget {
 class _MessState extends State<Mess> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+
+      return Scaffold
+    (
       
        appBar: AppBar(
 
@@ -39,7 +42,10 @@ class _MessState extends State<Mess> {
                  InkWell(
 
                      onTap: (){
-                       new Image.asset('App_image/image1.jpg');
+                       
+                         Navigator.push(context, 
+                         MaterialPageRoute(builder: (context)=>Menu1()),
+                         );
                      },
 
                      child:new ListTile(
@@ -52,6 +58,7 @@ class _MessState extends State<Mess> {
                           fontSize: 20.0,
                           color: Colors.blue,
                           fontWeight: FontWeight.bold,
+                          
 
                          )
                        ),
