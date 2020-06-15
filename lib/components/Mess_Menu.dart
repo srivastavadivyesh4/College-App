@@ -69,7 +69,12 @@ class _MessState extends State<Mess> {
 
                  InkWell(
 
-                     onTap: (){},
+                     onTap: (){
+                       
+                         Navigator.push(context, 
+                         MaterialPageRoute(builder: (context)=>Menu2()),
+                         );
+                     },
 
                      child:new ListTile(
 
@@ -91,7 +96,12 @@ class _MessState extends State<Mess> {
 
                  InkWell(
 
-                     onTap: (){},
+                     onTap: (){
+                       
+                         Navigator.push(context, 
+                         MaterialPageRoute(builder: (context)=>Menu3()),
+                         );
+                     },
 
                      child:new ListTile(
 
@@ -113,7 +123,12 @@ class _MessState extends State<Mess> {
 
                  InkWell(
 
-                     onTap: (){},
+                     onTap: (){
+                       
+                         Navigator.push(context, 
+                         MaterialPageRoute(builder: (context)=>Menu4()),
+                         );
+                     },
 
                      child:new ListTile(
 
@@ -135,7 +150,12 @@ class _MessState extends State<Mess> {
 
                 InkWell(
 
-                     onTap: (){},
+                     onTap: (){
+                       
+                         Navigator.push(context, 
+                         MaterialPageRoute(builder: (context)=>Menu5()),
+                         );
+                     },
 
                      child:new ListTile(
 
@@ -157,7 +177,12 @@ class _MessState extends State<Mess> {
 
                  InkWell(
 
-                     onTap: (){},
+                     onTap: (){
+                       
+                         Navigator.push(context, 
+                         MaterialPageRoute(builder: (context)=>Menu6()),
+                         );
+                     },
 
                      child:new ListTile(
 
@@ -179,7 +204,12 @@ class _MessState extends State<Mess> {
 
                  InkWell(
 
-                     onTap: (){},
+                     onTap: (){
+                       
+                         Navigator.push(context, 
+                         MaterialPageRoute(builder: (context)=>Menu7()),
+                         );
+                     },
 
                      child:new ListTile(
 
@@ -202,7 +232,12 @@ class _MessState extends State<Mess> {
 
                  InkWell(
 
-                     onTap: (){},
+                     onTap: (){
+                       
+                         Navigator.push(context, 
+                         MaterialPageRoute(builder: (context)=>Menu8()),
+                         );
+                     },
 
                      child:new ListTile(
 
@@ -224,7 +259,12 @@ class _MessState extends State<Mess> {
 
                  InkWell(
 
-                     onTap: (){},
+                     onTap: (){
+                       
+                         Navigator.push(context, 
+                         MaterialPageRoute(builder: (context)=>Menu9()),
+                         );
+                     },
 
                      child:new ListTile(
 
@@ -246,7 +286,12 @@ class _MessState extends State<Mess> {
 
                  InkWell(
 
-                     onTap: (){},
+                     onTap: (){
+                       
+                         Navigator.push(context, 
+                         MaterialPageRoute(builder: (context)=>Menu10()),
+                         );
+                     },
 
                      child:new ListTile(
 
