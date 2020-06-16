@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:practise/components/Bus_menu_list.dart';
 
+     // Bus Menu of all hostels
 
 class Bus_Menu extends StatefulWidget {
   @override
@@ -12,6 +13,8 @@ class _Bus_MenuState extends State<Bus_Menu> {
   Widget build(BuildContext context) {
     return Scaffold(
       
+      // App_Bar of Bus_Schedule
+
         appBar: new AppBar(
 
            backgroundColor: Colors.purple,
@@ -28,11 +31,17 @@ class _Bus_MenuState extends State<Bus_Menu> {
             centerTitle: true,
         ),
  
+         // body of Bus Schedule
+
          body: new Container(
+
+         // List of All hostels
 
            child: new ListView(
 
                children: <Widget>[
+
+             // BTECH 1st year
 
                  InkWell(
 
@@ -62,6 +71,8 @@ class _Bus_MenuState extends State<Bus_Menu> {
 
                  ),
 
+               // BTECH 2nd year boys hostel
+
                  InkWell(
 
                      onTap: (){
@@ -88,6 +99,8 @@ class _Bus_MenuState extends State<Bus_Menu> {
                      ),
 
                  ),
+
+           // BTECH 3rd year Boys Hostel
 
                  InkWell(
 
@@ -116,6 +129,8 @@ class _Bus_MenuState extends State<Bus_Menu> {
 
                  ),
 
+              // BTECH 4th year boys hostel
+
                  InkWell(
 
                      onTap: (){
@@ -142,6 +157,8 @@ class _Bus_MenuState extends State<Bus_Menu> {
                      ),
 
                  ),
+
+            // MTECH 1st year Boys Hostel
 
                 InkWell(
 
@@ -170,6 +187,8 @@ class _Bus_MenuState extends State<Bus_Menu> {
 
                  ),
 
+                 // MTECH 2nd Year Boys Hostel
+
                  InkWell(
 
                      onTap: (){
@@ -196,6 +215,8 @@ class _Bus_MenuState extends State<Bus_Menu> {
                      ),
 
                  ),
+
+               // PHD Boys Hostel
 
                  InkWell(
 
@@ -225,6 +246,8 @@ class _Bus_MenuState extends State<Bus_Menu> {
 
                  ),
 
+                // BTECH Girls Hostel
+
                  InkWell(
 
                      onTap: (){
@@ -251,6 +274,8 @@ class _Bus_MenuState extends State<Bus_Menu> {
                      ),
 
                  ),
+
+                // MTECH Girls Hostel
 
                  InkWell(
 
@@ -279,6 +304,8 @@ class _Bus_MenuState extends State<Bus_Menu> {
 
                  ),
 
+                // PHD Girls Hostel
+                
                  InkWell(
 
                      onTap: (){
