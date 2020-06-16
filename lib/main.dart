@@ -3,6 +3,7 @@
  import 'package:carousel_pro/carousel_pro.dart';
  import 'package:practise/components/News.dart';
  import 'package:practise/components/Mess_Menu.dart';
+ import 'package:practise/components/Bus_Menu.dart';
 
    void main(){
      runApp(MaterialApp(
@@ -140,10 +141,16 @@ class _HomepageState extends State<Homepage> {
              // Bus Schedule
 
                 InkWell(
-              onTap: (){},
+              onTap: (){
+
+                 Navigator.push(context, 
+                   
+                    MaterialPageRoute(builder: (context)=>Bus_Menu()),
+                 );                
+              },
               child: ListTile(
               title: Text('Bus Schedule'),
-              leading: Icon(Icons.traffic, color: Colors.purple,),
+              leading: Icon(Icons.traffic, color: Colors.purple),
             ),
                ),
           
