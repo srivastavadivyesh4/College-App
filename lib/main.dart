@@ -4,6 +4,7 @@
  import 'package:practise/components/News.dart';
  import 'package:practise/components/Mess_Menu.dart';
  import 'package:practise/components/Bus_Menu.dart';
+ import 'package:practise/components/exam.dart';
 
    void main(){
      runApp(MaterialApp(
@@ -157,7 +158,15 @@ class _HomepageState extends State<Homepage> {
              // Exam Schedule
 
                 InkWell(
-              onTap: (){},
+              onTap: (){
+
+                  Navigator.push(context, 
+                  
+                   MaterialPageRoute(builder: (context)=>exam_list()),
+
+                  );
+
+              },
               child: ListTile(
               title: Text('Exam Schedule'),
               leading: Icon(Icons.library_books, color: Colors.pink,),
