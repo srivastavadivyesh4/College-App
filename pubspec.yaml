@@ -21,6 +21,8 @@ dependencies:
     sdk: flutter
      
   carousel_pro: ^1.0.0
+  firebase_messaging:
+  cloud_firestore:
 
 
 

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "564640259781",
+    "firebase_url": "https://day-to-day-app-97e7c.firebaseio.com",
+    "project_id": "day-to-day-app-97e7c",
+    "storage_bucket": "day-to-day-app-97e7c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:564640259781:android:af938fd26657a400ec9aac",
+        "android_client_info": {
+          "package_name": "com.example.practise"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "564640259781-65sogv4022fmlgd9i285rt4bocfmj80g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.practise",
+            "certificate_hash": "5412edab9541998bba8f08ef12105a9a7b7ab54b"
+          }
+        },
+        {
+          "client_id": "564640259781-iordfbfgroc00n5j8g8p8eniplkljnu1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC93AjZR2BI3ns2OKS4xQQizxB9UDU2vnc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "564640259781-iordfbfgroc00n5j8g8p8eniplkljnu1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

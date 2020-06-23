@@ -63,7 +63,7 @@ class _NewsState extends State<News> {
      const url5='http://nitmeghalaya.in/nitmeghalaya/ckfinder/userfiles/files/application%20form_concession.docx';
 
      if(await canLaunch(url5)){
-       await launch(url5);
+       await launch(url5, forceSafariVC: true, forceWebView: true);
      }
      else{
        throw 'Cannot launch $url5';

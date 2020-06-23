@@ -6,7 +6,9 @@
  import 'package:practise/components/Bus_Menu.dart';  // dart file of bus schedule
  import 'package:practise/components/exam.dart';      // dart file of exam schedule
  import 'package:practise/components/splash.dart';
- 
+ import 'package:practise/components/classes.dart';
+ import 'package:firebase_messaging/firebase_messaging.dart'; 
+ import 'package:cloud_firestore/cloud_firestore.dart';
 
 
      // Our homepage stateful class
@@ -18,7 +20,19 @@ class Homepage extends StatefulWidget {
 }
 
 class _HomepageState extends State<Homepage> {
+
+final FirebaseMessaging _messaging=FirebaseMessaging();
+
   @override
+
+void initState() { 
+    super.initState();
+    
+     _messaging.getToken().then((token) {
+       print(token);
+     });
+  }
+
   Widget build(BuildContext context) {
 
   Widget image_carousel = new Container(   // Image carousel starts here
@@ -109,12 +123,19 @@ class _HomepageState extends State<Homepage> {
             ),
                ),
 
-            // MyAccount
+            // Classes_Schedule
 
                 InkWell(
-              onTap: (){},
+              onTap: (){
+
+                  Navigator.push(context, 
+                  MaterialPageRoute(builder: (context)=>classes_schedule())
+                  );
+
+              },
               child: ListTile(
-              title: Text('My Account'),
+              title: Text('Classes'),
+               
               leading: Icon(Icons.person, color: Colors.red,),
             ),
                ),
