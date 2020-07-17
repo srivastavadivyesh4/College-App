@@ -3,7 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:practise/homescreen.dart';
 
- class splash_screen extends StatefulWidget {
+ class splash_screen extends StatefulWidget {   // stateful widget for splash screen
    @override
    _splash_screenState createState() => _splash_screenState();
  }
