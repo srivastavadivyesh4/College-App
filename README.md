@@ -1,16 +1,6 @@
-# practise
 
-A new Flutter project.
+Flutter is a Google's UI Toolkit introduced by Google in 2017, having native cross platform development can be used to build both Android and IOS Applications through a single Codebase. Flutter with its Hot Reload Feature have a better performance then React Native and Kotlin. So, 'I decided to choose Flutter to build my application using Dart Programming Language.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+  I named my app as College App, because it can be used in Day to Day life for my college students. If any import notice appears in Student Notice Board we are not quickly know about it, so in my app students will get a notification through the app and can land to the notice page in a single click and can download any important file using the app. Students can also check daily class routines, exam schedule, mess routines atc. through the app. 
+  
+I have used SplashScreen, URL Launcher,PageNavigator, Drawer, Scaffold etc. some of the widgets in my app.   
